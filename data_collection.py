@@ -1,7 +1,6 @@
 import pandas as pd
 import requests
 import datetime as dt
-import os
 
 base_url = 'https://fantasy.premierleague.com/api/'
 
@@ -52,4 +51,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
