@@ -46,7 +46,7 @@ def get_trans_in():
 
 def main():
     t_in = get_trans_in()
-    print('Total transfers in for Erling Haaland this GW is: ' + t_in)
+    print('Total transfers in for Erling Haaland this GW is: ' + str(t_in))
     
 
 if __name__ == "__main__":
