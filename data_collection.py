@@ -48,10 +48,10 @@ def get_trans_in():
 def get_data_row():
     ele_df = pd.DataFrame(get_bootstrap_data()['elements'])
     eh_df = ele_df.loc[ele_df['second_name'] == 'Haaland']
-    data = {'Name': [eh_df['second_name'].iloc[0]],
-            'TSB%': [eh_df['selected_by_percent'].iloc[0]],
-            'T_In_GW': [eh_df['transfers_in_event'].iloc[0]],
-            'T_Out_GW': [eh_df['transfers_out_event'].iloc[0]],
+    data = {'Name': eh_df['second_name'].iloc[0],
+            'TSB%': eh_df['selected_by_percent'].iloc[0],
+            'T_In_GW': eh_df['transfers_in_event'].iloc[0],
+            'T_Out_GW': eh_df['transfers_out_event'].iloc[0],
             'datetime': dt.datetime.now()}
     return data
 

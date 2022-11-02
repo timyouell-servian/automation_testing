@@ -41,3 +41,13 @@ jobs:
       name: Run data_collection.py
       run: |
         python ./data_collection.py
+    
+    - id: push-to-repo
+      name: Push .csv back to GitHub
+      run: |
+        git config user.name timyouell-servian
+        git config user.email tim.youell@servian.com
+        git add .
+        git commit -m '.csv updated'
+        git push -u origin main
+
