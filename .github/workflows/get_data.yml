@@ -1,6 +1,7 @@
 name: Get Haaland Transfer Data
 
 on:
+  push:
   schedule:
     - cron: '*/5 * * * *'
 
