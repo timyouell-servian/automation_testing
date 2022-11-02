@@ -4,7 +4,7 @@ on:
   push:
 
 jobs:
-  get_data:
+  get-data:
     runs-on: ubunutu-latest
 
     permissions:
@@ -12,13 +12,13 @@ jobs:
       id-token: write
 
     steps:
-    - id: init_checkout
+    - id: init-checkout
       name: Initial Checkout
       uses: actions/checkout@v3
       with:
         fetch-depth: 0
 
-    - id: checkout_repo
+    - id: checkout-repo
       name: Checkout automation_testing repo
       uses: actions/checkout@v3
       with:
@@ -27,7 +27,7 @@ jobs:
         token: ${{ secrets.PAT }}
         path: workflow
     
-    - id: install_packages
+    - id: install-packages
       name: Install Python Dependencies
       run: python -m pip install --upgrade -r ./requirements.txt
 
