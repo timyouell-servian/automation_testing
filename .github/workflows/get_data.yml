@@ -2,7 +2,7 @@ name: Get Haaland Transfer Data
 
 on:
   schedule:
-    - cron: '15 * * * *'
+    - cron: '48 * * * *'
 
 jobs:
   get-data:
